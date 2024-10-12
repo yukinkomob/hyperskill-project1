@@ -53,12 +53,13 @@ fun test() {
     println("2. To decompose a program into several small subroutines.")
     println("3. To determine the execution time of a program.")
     println("4. To interrupt the execution of a program.")
-    do {
+    while(true) {
         val num = scanner.nextInt()
-        if (num != 2) {
-            println("Please, try again.")
+        if (num == 2) {
+            break
         }
-    } while (num == 4)
+        println("Please, try again.")
+    }
 }
 
 fun end() {
